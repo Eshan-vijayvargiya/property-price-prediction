@@ -152,6 +152,10 @@ div[class*="st-key-card-go"] button p { text-align: left; }
 .react-aria-SelectionIndicator { display: none !important; }
 
 /* sign-in page */
+.st-key-mobile [data-testid="stTextInputRootElement"]::before { content: "+91"; display: flex; align-items: center; padding: 0 .75rem;
+  font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: #e6edf3; border-right: 1px solid #2d3640;
+  background: #1c222b; border-radius: 6px 0 0 6px; align-self: stretch; flex: 0 0 auto; }
+@media (max-width: 640px) { .st-key-card-signin [data-testid="InputInstructions"] { display: none; } }
 .signin-hero { padding: .4rem 1rem 0 0; }
 .signin-hero .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; color: #f5a524; }
 .signin-hero h1 { font-size: 50px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.05; margin: .5rem 0 .6rem; color: #e6edf3; }

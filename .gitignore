@@ -4,3 +4,5 @@ __pycache__/
 data/oof.parquet
 data/raw/six_city/
 .venv/
+# visitor exports hold personal data and your sheet KEY: keep them off GitHub
+*.xlsx

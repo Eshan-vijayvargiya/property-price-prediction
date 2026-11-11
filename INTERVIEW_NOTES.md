@@ -177,9 +177,11 @@ builder brand, and enquiry data, so the segments become real buyer segments and 
 leads will book.
 
 **Why a sign-in page?** Property sites capture leads before showing prices, so I built the same flow: name
-plus mobile or email, checked (a 10-digit Indian mobile starting 6-9, or a valid email), with *Skip for now* so
-nobody is forced. Sign-ins go to a private Google Sheet through a secret web-hook URL kept in Streamlit's
-Secrets, never in the code. If saving fails, the visitor still gets in.
+plus a mobile number (+91 fixed, the box takes at most 10 digits, and it must start with 6-9) and an optional
+email, with *Skip for now* so nobody is forced. Sign-ins go to a private Google Sheet through a secret web-hook URL kept in Streamlit's
+Secrets, never in the code. If saving fails, the visitor still gets in. My Excel file reads the sheet through
+Power Query (a JSON endpoint that needs a private key), so Data → Refresh All shows the newest sign-ins.
+Everything is stored as plain text, so a name like `=HYPERLINK(...)` can't run as a formula.
 
 **Why line drawings, not photos?** Everything is drawn in code, so there's nothing to license, and the drawings
 carry data: each locality's skyline is taller where prices are higher, and the floor plan redraws with the flat

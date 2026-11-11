@@ -12,7 +12,7 @@ property listings and tested the way a developer would actually use it.
 
 | Page | What it does |
 |---|---|
-| **Sign-in page** | Name plus mobile number or email (validated), or *Skip for now*. Sign-ins can go to a private Google Sheet: [docs/SIGNIN_SETUP.md](docs/SIGNIN_SETUP.md) |
+| **Sign-in page** | Name, mobile number (+91 fixed, exactly 10 digits, must start 6-9) and an optional email, or *Skip for now*. Sign-ins go to a private Google Sheet and from there into an Excel file that refreshes (Power Query): [docs/SIGNIN_SETUP.md](docs/SIGNIN_SETUP.md) |
 | **Price estimator** | Describe a flat (locality, project, BHK, area, status, new/resale): get an asking price, an 80% range (with the model's real past errors behind it), a floor plan that redraws with the flat type, the locality's own skyline and numbers, the same flat across Mumbai, what-ifs and similar listings |
 | **Launch planner** | For a developer: price a new project's unit mix and see where it sits against the projects already selling in that locality |
 | **Market explorer** | A locality price index (the same standard flat everywhere), zone profiles, a deep-dive on any locality |
