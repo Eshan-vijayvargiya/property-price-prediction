@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/oof.parquet
+data/raw/six_city/
+.venv/

@@ -1,0 +1,49 @@
+{
+ "raw_rows": 76038,
+ "steps": [
+  {
+   "rule": "Exact duplicate listings (same flat posted again)",
+   "removed": 20312
+  },
+  {
+   "rule": "Villas, independent houses and penthouses (too few, a different market)",
+   "removed": 216
+  },
+  {
+   "rule": "More than 5 bedrooms (too few to model)",
+   "removed": 116
+  },
+  {
+   "rule": "Area under 200 or over 6,000 sq ft",
+   "removed": 62
+  },
+  {
+   "rule": "Under 150 sq ft per bedroom (area or BHK mistyped)",
+   "removed": 0
+  },
+  {
+   "rule": "Price per sq ft in the extreme 0.5% at either end",
+   "removed": 554
+  },
+  {
+   "rule": "Price per sq ft over 3x above or below the locality's typical value",
+   "removed": 162
+  },
+  {
+   "rule": "Locality too small or unclear to place in a zone",
+   "removed": 18
+  }
+ ],
+ "clean_rows": 54598,
+ "localities": 175,
+ "projects": 9477,
+ "by_zone": {
+  "Western Suburbs": 11783,
+  "Mira Road & Vasai-Virar": 10988,
+  "Navi Mumbai & Panvel": 7784,
+  "Thane": 7596,
+  "Central Suburbs": 7059,
+  "Kalyan-Dombivli & beyond": 6924,
+  "South Mumbai": 2464
+ }
+}

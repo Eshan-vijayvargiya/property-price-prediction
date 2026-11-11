@@ -1,0 +1,22 @@
+{
+ "Known project": {
+  "base_error_pct": 9.3,
+  "increase_pct_points": {
+   "Location (zone, locality)": 4.1,
+   "Project": 43.6,
+   "Size (area, BHK)": 29.0,
+   "Construction status": 0.3,
+   "New or resale": 0.3
+  }
+ },
+ "New project": {
+  "base_error_pct": 12.3,
+  "increase_pct_points": {
+   "Location (zone, locality)": 33.7,
+   "Project": 0.0,
+   "Size (area, BHK)": 29.3,
+   "Construction status": 0.2,
+   "New or resale": 0.7
+  }
+ }
+}

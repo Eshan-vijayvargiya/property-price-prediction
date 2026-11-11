@@ -1,0 +1,356 @@
+{
+ "Known project": {
+  "Baseline (locality price/sq ft x area)": {
+   "median_error_pct": 15.8,
+   "within_10_pct": 34.0,
+   "within_20_pct": 60.2,
+   "r2_log": 0.891,
+   "rmse_log": 0.2663
+  },
+  "Linear regression": {
+   "median_error_pct": 13.6,
+   "within_10_pct": 38.4,
+   "within_20_pct": 66.9,
+   "r2_log": 0.922,
+   "rmse_log": 0.2256
+  },
+  "Random forest": {
+   "median_error_pct": 8.4,
+   "within_10_pct": 56.7,
+   "within_20_pct": 83.1,
+   "r2_log": 0.959,
+   "rmse_log": 0.1637
+  },
+  "Gradient boosting": {
+   "median_error_pct": 9.2,
+   "within_10_pct": 53.3,
+   "within_20_pct": 81.5,
+   "r2_log": 0.957,
+   "rmse_log": 0.1678
+  },
+  "_by_zone_gbm": {
+   "Central Suburbs": {
+    "median_error_pct": 9.9,
+    "within_10_pct": 50.5,
+    "within_20_pct": 80.1,
+    "r2_log": 0.906,
+    "rmse_log": 0.1705
+   },
+   "Kalyan-Dombivli & beyond": {
+    "median_error_pct": 8.1,
+    "within_10_pct": 58.6,
+    "within_20_pct": 85.3,
+    "r2_log": 0.903,
+    "rmse_log": 0.1507
+   },
+   "Mira Road & Vasai-Virar": {
+    "median_error_pct": 7.1,
+    "within_10_pct": 63.7,
+    "within_20_pct": 89.0,
+    "r2_log": 0.922,
+    "rmse_log": 0.1301
+   },
+   "Navi Mumbai & Panvel": {
+    "median_error_pct": 9.4,
+    "within_10_pct": 52.6,
+    "within_20_pct": 80.8,
+    "r2_log": 0.922,
+    "rmse_log": 0.1764
+   },
+   "South Mumbai": {
+    "median_error_pct": 12.2,
+    "within_10_pct": 42.2,
+    "within_20_pct": 71.1,
+    "r2_log": 0.911,
+    "rmse_log": 0.2026
+   },
+   "Thane": {
+    "median_error_pct": 10.8,
+    "within_10_pct": 46.9,
+    "within_20_pct": 77.4,
+    "r2_log": 0.909,
+    "rmse_log": 0.1836
+   },
+   "Western Suburbs": {
+    "median_error_pct": 10.3,
+    "within_10_pct": 48.9,
+    "within_20_pct": 78.4,
+    "r2_log": 0.914,
+    "rmse_log": 0.1819
+   }
+  },
+  "_by_bhk_gbm": {
+   "1": {
+    "median_error_pct": 8.2,
+    "within_10_pct": 57.8,
+    "within_20_pct": 84.5,
+    "r2_log": 0.91,
+    "rmse_log": 0.1563
+   },
+   "2": {
+    "median_error_pct": 9.2,
+    "within_10_pct": 53.7,
+    "within_20_pct": 82.6,
+    "r2_log": 0.909,
+    "rmse_log": 0.1603
+   },
+   "3": {
+    "median_error_pct": 10.9,
+    "within_10_pct": 46.7,
+    "within_20_pct": 76.3,
+    "r2_log": 0.891,
+    "rmse_log": 0.1875
+   },
+   "4": {
+    "median_error_pct": 12.8,
+    "within_10_pct": 41.0,
+    "within_20_pct": 69.2,
+    "r2_log": 0.874,
+    "rmse_log": 0.2276
+   },
+   "5": {
+    "median_error_pct": 14.6,
+    "within_10_pct": 31.9,
+    "within_20_pct": 60.7,
+    "r2_log": 0.833,
+    "rmse_log": 0.2607
+   }
+  }
+ },
+ "New project": {
+  "Baseline (locality price/sq ft x area)": {
+   "median_error_pct": 16.2,
+   "within_10_pct": 33.0,
+   "within_20_pct": 59.0,
+   "r2_log": 0.887,
+   "rmse_log": 0.2712
+  },
+  "Linear regression": {
+   "median_error_pct": 13.9,
+   "within_10_pct": 37.9,
+   "within_20_pct": 66.1,
+   "r2_log": 0.919,
+   "rmse_log": 0.2299
+  },
+  "Random forest": {
+   "median_error_pct": 12.5,
+   "within_10_pct": 41.6,
+   "within_20_pct": 69.6,
+   "r2_log": 0.925,
+   "rmse_log": 0.2209
+  },
+  "Gradient boosting": {
+   "median_error_pct": 12.7,
+   "within_10_pct": 40.8,
+   "within_20_pct": 69.3,
+   "r2_log": 0.925,
+   "rmse_log": 0.2204
+  },
+  "_by_zone_gbm": {
+   "Central Suburbs": {
+    "median_error_pct": 13.9,
+    "within_10_pct": 36.8,
+    "within_20_pct": 66.7,
+    "r2_log": 0.833,
+    "rmse_log": 0.2268
+   },
+   "Kalyan-Dombivli & beyond": {
+    "median_error_pct": 11.3,
+    "within_10_pct": 45.6,
+    "within_20_pct": 74.5,
+    "r2_log": 0.829,
+    "rmse_log": 0.1998
+   },
+   "Mira Road & Vasai-Virar": {
+    "median_error_pct": 8.9,
+    "within_10_pct": 55.3,
+    "within_20_pct": 83.5,
+    "r2_log": 0.888,
+    "rmse_log": 0.1557
+   },
+   "Navi Mumbai & Panvel": {
+    "median_error_pct": 12.7,
+    "within_10_pct": 40.9,
+    "within_20_pct": 68.4,
+    "r2_log": 0.873,
+    "rmse_log": 0.2244
+   },
+   "South Mumbai": {
+    "median_error_pct": 18.1,
+    "within_10_pct": 28.4,
+    "within_20_pct": 54.4,
+    "r2_log": 0.828,
+    "rmse_log": 0.2823
+   },
+   "Thane": {
+    "median_error_pct": 16.3,
+    "within_10_pct": 32.2,
+    "within_20_pct": 60.0,
+    "r2_log": 0.83,
+    "rmse_log": 0.251
+   },
+   "Western Suburbs": {
+    "median_error_pct": 14.8,
+    "within_10_pct": 35.0,
+    "within_20_pct": 64.1,
+    "r2_log": 0.851,
+    "rmse_log": 0.24
+   }
+  },
+  "_by_bhk_gbm": {
+   "1": {
+    "median_error_pct": 11.0,
+    "within_10_pct": 45.9,
+    "within_20_pct": 74.8,
+    "r2_log": 0.851,
+    "rmse_log": 0.2012
+   },
+   "2": {
+    "median_error_pct": 12.8,
+    "within_10_pct": 40.7,
+    "within_20_pct": 69.5,
+    "r2_log": 0.838,
+    "rmse_log": 0.2133
+   },
+   "3": {
+    "median_error_pct": 15.6,
+    "within_10_pct": 33.9,
+    "within_20_pct": 61.3,
+    "r2_log": 0.807,
+    "rmse_log": 0.2487
+   },
+   "4": {
+    "median_error_pct": 17.6,
+    "within_10_pct": 29.2,
+    "within_20_pct": 55.3,
+    "r2_log": 0.785,
+    "rmse_log": 0.2973
+   },
+   "5": {
+    "median_error_pct": 18.5,
+    "within_10_pct": 29.1,
+    "within_20_pct": 52.6,
+    "r2_log": 0.764,
+    "rmse_log": 0.3103
+   }
+  }
+ },
+ "New locality": {
+  "Baseline (locality price/sq ft x area)": {
+   "median_error_pct": 27.9,
+   "within_10_pct": 16.1,
+   "within_20_pct": 33.8,
+   "r2_log": 0.711,
+   "rmse_log": 0.4336
+  },
+  "Linear regression": {
+   "median_error_pct": 25.8,
+   "within_10_pct": 19.3,
+   "within_20_pct": 38.9,
+   "r2_log": 0.787,
+   "rmse_log": 0.3717
+  },
+  "Random forest": {
+   "median_error_pct": 27.2,
+   "within_10_pct": 18.8,
+   "within_20_pct": 37.1,
+   "r2_log": 0.739,
+   "rmse_log": 0.4119
+  },
+  "Gradient boosting": {
+   "median_error_pct": 25.1,
+   "within_10_pct": 20.4,
+   "within_20_pct": 40.3,
+   "r2_log": 0.767,
+   "rmse_log": 0.3891
+  },
+  "_by_zone_gbm": {
+   "Central Suburbs": {
+    "median_error_pct": 17.5,
+    "within_10_pct": 30.4,
+    "within_20_pct": 56.5,
+    "r2_log": 0.735,
+    "rmse_log": 0.2858
+   },
+   "Kalyan-Dombivli & beyond": {
+    "median_error_pct": 27.7,
+    "within_10_pct": 16.8,
+    "within_20_pct": 34.7,
+    "r2_log": 0.37,
+    "rmse_log": 0.3835
+   },
+   "Mira Road & Vasai-Virar": {
+    "median_error_pct": 27.2,
+    "within_10_pct": 16.2,
+    "within_20_pct": 35.3,
+    "r2_log": 0.209,
+    "rmse_log": 0.4139
+   },
+   "Navi Mumbai & Panvel": {
+    "median_error_pct": 20.0,
+    "within_10_pct": 26.7,
+    "within_20_pct": 49.9,
+    "r2_log": 0.68,
+    "rmse_log": 0.3561
+   },
+   "South Mumbai": {
+    "median_error_pct": 23.8,
+    "within_10_pct": 21.6,
+    "within_20_pct": 42.2,
+    "r2_log": 0.723,
+    "rmse_log": 0.358
+   },
+   "Thane": {
+    "median_error_pct": 33.7,
+    "within_10_pct": 10.6,
+    "within_20_pct": 24.0,
+    "r2_log": 0.345,
+    "rmse_log": 0.493
+   },
+   "Western Suburbs": {
+    "median_error_pct": 24.6,
+    "within_10_pct": 22.3,
+    "within_20_pct": 42.2,
+    "r2_log": 0.64,
+    "rmse_log": 0.373
+   }
+  },
+  "_by_bhk_gbm": {
+   "1": {
+    "median_error_pct": 26.0,
+    "within_10_pct": 18.0,
+    "within_20_pct": 37.6,
+    "r2_log": 0.428,
+    "rmse_log": 0.3946
+   },
+   "2": {
+    "median_error_pct": 24.6,
+    "within_10_pct": 22.0,
+    "within_20_pct": 41.8,
+    "r2_log": 0.473,
+    "rmse_log": 0.3851
+   },
+   "3": {
+    "median_error_pct": 24.0,
+    "within_10_pct": 21.6,
+    "within_20_pct": 42.1,
+    "r2_log": 0.542,
+    "rmse_log": 0.3836
+   },
+   "4": {
+    "median_error_pct": 25.5,
+    "within_10_pct": 18.9,
+    "within_20_pct": 39.5,
+    "r2_log": 0.608,
+    "rmse_log": 0.4015
+   },
+   "5": {
+    "median_error_pct": 26.5,
+    "within_10_pct": 18.2,
+    "within_20_pct": 36.5,
+    "r2_log": 0.51,
+    "rmse_log": 0.4472
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "r2_log": 0.922,
+ "n": 54598,
+ "projects": 9537,
+ "effects": {
+  "10% more area (same BHK, locality)": {
+   "effect_pct": 5.1,
+   "low_pct": 4.8,
+   "high_pct": 5.3
+  },
+  "Under construction (vs ready to move)": {
+   "effect_pct": 1.8,
+   "low_pct": 0.6,
+   "high_pct": 3.1
+  },
+  "Resale (vs new)": {
+   "effect_pct": -3.9,
+   "low_pct": -5.1,
+   "high_pct": -2.6
+  },
+  "Studio (vs 1 BHK flat)": {
+   "effect_pct": -27.6,
+   "low_pct": -30.0,
+   "high_pct": -25.1
+  },
+  "1 BHK (vs 2 BHK, same area)": {
+   "effect_pct": -23.6,
+   "low_pct": -24.6,
+   "high_pct": -22.7
+  },
+  "3 BHK (vs 2 BHK, same area)": {
+   "effect_pct": 33.3,
+   "low_pct": 31.6,
+   "high_pct": 35.1
+  },
+  "4 BHK (vs 2 BHK, same area)": {
+   "effect_pct": 78.8,
+   "low_pct": 73.9,
+   "high_pct": 83.8
+  }
+ },
+ "under_construction_by_zone": {
+  "Central Suburbs": {
+   "effect_pct": -0.3,
+   "low_pct": -3.5,
+   "high_pct": 3.1,
+   "n": 7059
+  },
+  "Kalyan-Dombivli & beyond": {
+   "effect_pct": 5.7,
+   "low_pct": 2.6,
+   "high_pct": 9.0,
+   "n": 6924
+  },
+  "Mira Road & Vasai-Virar": {
+   "effect_pct": 0.5,
+   "low_pct": -1.1,
+   "high_pct": 2.2,
+   "n": 10988
+  },
+  "Navi Mumbai & Panvel": {
+   "effect_pct": 4.2,
+   "low_pct": -0.3,
+   "high_pct": 8.9,
+   "n": 7784
+  },
+  "South Mumbai": {
+   "effect_pct": -0.8,
+   "low_pct": -6.5,
+   "high_pct": 5.2,
+   "n": 2464
+  },
+  "Thane": {
+   "effect_pct": 4.3,
+   "low_pct": -0.4,
+   "high_pct": 9.2,
+   "n": 7596
+  },
+  "Western Suburbs": {
+   "effect_pct": -0.4,
+   "low_pct": -2.6,
+   "high_pct": 1.8,
+   "n": 11783
+  }
+ },
+ "reference_locality": "Mira Road East"
+}

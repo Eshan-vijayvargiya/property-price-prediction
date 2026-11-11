@@ -1,0 +1,222 @@
+{
+ "Known project": {
+  "0.8": {
+   "lo": -0.1922822068526635,
+   "hi": 0.19315631073317582,
+   "by_zone": {
+    "South Mumbai": {
+     "lo": -0.23815446460215384,
+     "hi": 0.2494981017252504
+    },
+    "Western Suburbs": {
+     "lo": -0.2099210539244183,
+     "hi": 0.20653883077041282
+    },
+    "Central Suburbs": {
+     "lo": -0.20121004723357885,
+     "hi": 0.20068795855366728
+    },
+    "Thane": {
+     "lo": -0.21532158771388688,
+     "hi": 0.2144277088708888
+    },
+    "Navi Mumbai & Panvel": {
+     "lo": -0.1952216641804711,
+     "hi": 0.199471911793228
+    },
+    "Mira Road & Vasai-Virar": {
+     "lo": -0.15378753723604197,
+     "hi": 0.14846963073734437
+    },
+    "Kalyan-Dombivli & beyond": {
+     "lo": -0.17223652409390253,
+     "hi": 0.16878530418826004
+    }
+   },
+   "coverage_pct": 79.9,
+   "coverage_one_width_pct": 80.0,
+   "coverage_by_zone": {
+    "South Mumbai": 80.0,
+    "Western Suburbs": 80.0,
+    "Central Suburbs": 80.0,
+    "Thane": 79.9,
+    "Navi Mumbai & Panvel": 79.9,
+    "Mira Road & Vasai-Virar": 79.9,
+    "Kalyan-Dombivli & beyond": 79.9
+   },
+   "coverage_by_zone_one_width": {
+    "South Mumbai": 69.4,
+    "Western Suburbs": 76.7,
+    "Central Suburbs": 78.6,
+    "Thane": 75.4,
+    "Navi Mumbai & Panvel": 79.1,
+    "Mira Road & Vasai-Virar": 88.0,
+    "Kalyan-Dombivli & beyond": 84.0
+   }
+  },
+  "0.9": {
+   "lo": -0.26538701722542796,
+   "hi": 0.2643564581288141,
+   "by_zone": {
+    "South Mumbai": {
+     "lo": -0.32166414691336204,
+     "hi": 0.33190258161967523
+    },
+    "Western Suburbs": {
+     "lo": -0.28967034062026364,
+     "hi": 0.2785958837502271
+    },
+    "Central Suburbs": {
+     "lo": -0.2655986357126338,
+     "hi": 0.27216683376577067
+    },
+    "Thane": {
+     "lo": -0.29636806692912027,
+     "hi": 0.28513408898666137
+    },
+    "Navi Mumbai & Panvel": {
+     "lo": -0.2802151978834854,
+     "hi": 0.2690798314852227
+    },
+    "Mira Road & Vasai-Virar": {
+     "lo": -0.20566119792299586,
+     "hi": 0.20849145077764153
+    },
+    "Kalyan-Dombivli & beyond": {
+     "lo": -0.237828719346075,
+     "hi": 0.23951334168173952
+    }
+   },
+   "coverage_pct": 90.0,
+   "coverage_one_width_pct": 90.0,
+   "coverage_by_zone": {
+    "South Mumbai": 89.7,
+    "Western Suburbs": 90.0,
+    "Central Suburbs": 89.9,
+    "Thane": 90.0,
+    "Navi Mumbai & Panvel": 90.0,
+    "Mira Road & Vasai-Virar": 90.0,
+    "Kalyan-Dombivli & beyond": 90.0
+   },
+   "coverage_by_zone_one_width": {
+    "South Mumbai": 83.7,
+    "Western Suburbs": 88.0,
+    "Central Suburbs": 89.5,
+    "Thane": 87.5,
+    "Navi Mumbai & Panvel": 89.1,
+    "Mira Road & Vasai-Virar": 94.9,
+    "Kalyan-Dombivli & beyond": 92.3
+   }
+  }
+ },
+ "New project": {
+  "0.8": {
+   "lo": -0.2577679295524568,
+   "hi": 0.2680467283740642,
+   "by_zone": {
+    "South Mumbai": {
+     "lo": -0.36047317894659303,
+     "hi": 0.34577788296028195
+    },
+    "Western Suburbs": {
+     "lo": -0.29144371817263637,
+     "hi": 0.283667528198705
+    },
+    "Central Suburbs": {
+     "lo": -0.25743908725654235,
+     "hi": 0.27973077533193585
+    },
+    "Thane": {
+     "lo": -0.30034175015499187,
+     "hi": 0.329238626235572
+    },
+    "Navi Mumbai & Panvel": {
+     "lo": -0.2654502830491385,
+     "hi": 0.2708686121118486
+    },
+    "Mira Road & Vasai-Virar": {
+     "lo": -0.18194940154306707,
+     "hi": 0.17801452304312093
+    },
+    "Kalyan-Dombivli & beyond": {
+     "lo": -0.22206918020798652,
+     "hi": 0.23946137575696477
+    }
+   },
+   "coverage_pct": 79.9,
+   "coverage_one_width_pct": 80.0,
+   "coverage_by_zone": {
+    "South Mumbai": 79.7,
+    "Western Suburbs": 79.9,
+    "Central Suburbs": 79.9,
+    "Thane": 80.0,
+    "Navi Mumbai & Panvel": 79.9,
+    "Mira Road & Vasai-Virar": 79.9,
+    "Kalyan-Dombivli & beyond": 79.7
+   },
+   "coverage_by_zone_one_width": {
+    "South Mumbai": 65.9,
+    "Western Suburbs": 76.0,
+    "Central Suburbs": 79.1,
+    "Thane": 72.0,
+    "Navi Mumbai & Panvel": 79.3,
+    "Mira Road & Vasai-Virar": 91.2,
+    "Kalyan-Dombivli & beyond": 84.5
+   }
+  },
+  "0.9": {
+   "lo": -0.35129914858468786,
+   "hi": 0.361642918197365,
+   "by_zone": {
+    "South Mumbai": {
+     "lo": -0.4682886089550137,
+     "hi": 0.4562615322938581
+    },
+    "Western Suburbs": {
+     "lo": -0.39008804385014495,
+     "hi": 0.37418199852574785
+    },
+    "Central Suburbs": {
+     "lo": -0.3312944731018501,
+     "hi": 0.37299038353853314
+    },
+    "Thane": {
+     "lo": -0.3975094995239412,
+     "hi": 0.4151861405324828
+    },
+    "Navi Mumbai & Panvel": {
+     "lo": -0.3594595014401725,
+     "hi": 0.371965016179038
+    },
+    "Mira Road & Vasai-Virar": {
+     "lo": -0.24879583541617675,
+     "hi": 0.2486870893532152
+    },
+    "Kalyan-Dombivli & beyond": {
+     "lo": -0.29791973978963127,
+     "hi": 0.3310062015091386
+    }
+   },
+   "coverage_pct": 89.8,
+   "coverage_one_width_pct": 90.0,
+   "coverage_by_zone": {
+    "South Mumbai": 89.7,
+    "Western Suburbs": 89.7,
+    "Central Suburbs": 89.7,
+    "Thane": 90.0,
+    "Navi Mumbai & Panvel": 89.9,
+    "Mira Road & Vasai-Virar": 89.9,
+    "Kalyan-Dombivli & beyond": 89.8
+   },
+   "coverage_by_zone_one_width": {
+    "South Mumbai": 80.4,
+    "Western Suburbs": 87.8,
+    "Central Suburbs": 90.2,
+    "Thane": 85.4,
+    "Navi Mumbai & Panvel": 89.3,
+    "Mira Road & Vasai-Virar": 96.3,
+    "Kalyan-Dombivli & beyond": 93.0
+   }
+  }
+ }
+}
