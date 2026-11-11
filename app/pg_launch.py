@@ -99,7 +99,7 @@ def render():
                                              axis=alt.Axis(labelLimit=260, labelOverlap=False)))
         bars = base.mark_bar(cornerRadiusEnd=4, height=13).encode(
             x=alt.X("ppsf:Q", title="₹ per sq ft (median asking)"),
-            color=alt.Color("who:N", scale=alt.Scale(domain=["Your launch", "Existing project"], range=["#9b7dff", style.BLUE]),
+            color=alt.Color("who:N", scale=alt.Scale(domain=["Your launch", "Existing project"], range=[style.ACCENT, style.SLATE]),
                             legend=None),
             tooltip=[alt.Tooltip("Project:N"), alt.Tooltip("ppsf:Q", title="₹/sq ft", format=",.0f"),
                      alt.Tooltip("listings:Q", title="Listings"), alt.Tooltip("uc:Q", title="% under construction", format=".0f")])

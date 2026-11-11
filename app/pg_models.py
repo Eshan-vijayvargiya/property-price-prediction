@@ -9,7 +9,7 @@ import style
 import ui
 
 TESTS = ["Known project", "New project", "New locality"]
-TEST_COLORS = [style.BLUE, style.ORANGE, style.AQUA]
+TEST_COLORS = [style.BLUE, style.YELLOW, style.AQUA]
 TEXT = {
     "Known project": "Random 5-fold split. A new listing in a project that's already on the market.",
     "New project": "Whole projects held out together. Pricing a launch the model has never seen. <b>The developer's case.</b>",
@@ -76,16 +76,16 @@ def render():
         which = st.segmented_control("Test ", ["Known project", "New project"], default="New project", key="ml_sc") or "New project"
         col = "known_lakh" if which == "Known project" else "new_lakh"
         line = pd.DataFrame({"x": [15, 2500], "y": [15, 2500]})
-        pts = alt.Chart(o).mark_circle(size=18, opacity=0.45, color=style.BLUE).encode(
+        pts = alt.Chart(o).mark_circle(size=18, opacity=0.45, color=style.YELLOW).encode(
             x=alt.X("actual_lakh:Q", scale=alt.Scale(type="log", domain=[15, 2500], nice=False), axis=ui.log_lakh_axis("Actual asking price")),
             y=alt.Y(f"{col}:Q", scale=alt.Scale(type="log", domain=[15, 2500], nice=False), axis=ui.log_lakh_axis("Predicted")),
             tooltip=[alt.Tooltip("Zone:N"), alt.Tooltip("BHK:Q"), alt.Tooltip("actual_lakh:Q", title="Actual (lakh)", format=",.1f"),
                      alt.Tooltip(f"{col}:Q", title="Predicted (lakh)", format=",.1f")])
-        diag = alt.Chart(line).mark_line(color="#9b7dff", strokeDash=[5, 4]).encode(x="x:Q", y="y:Q")
+        diag = alt.Chart(line).mark_line(color=style.ACCENT, strokeDash=[5, 4]).encode(x="x:Q", y="y:Q")
         ui.chart(pts + diag, 330)
     with c4, style.card("ml-zone"):
         style.sec("Error by zone", "🗺️", "gradient boosting")
-        style.legend([("Known project", style.BLUE), ("New project", style.ORANGE)])
+        style.legend([("Known project", style.BLUE), ("New project", style.YELLOW)])
         z = pd.DataFrame([{"Zone": zn, "test": t, "err": v["median_error_pct"]}
                           for t in ["Known project", "New project"] for zn, v in ev[t]["_by_zone_gbm"].items()])
         c = alt.Chart(z).mark_bar(cornerRadiusEnd=3, height=alt.RelativeBandSize(0.8)).encode(
@@ -93,7 +93,7 @@ def render():
                     axis=alt.Axis(labelLimit=190)),
             yOffset=alt.YOffset("test:N", sort=["Known project", "New project"]),
             x=alt.X("err:Q", title="Median error (%)"),
-            color=alt.Color("test:N", scale=alt.Scale(domain=["Known project", "New project"], range=[style.BLUE, style.ORANGE]),
+            color=alt.Color("test:N", scale=alt.Scale(domain=["Known project", "New project"], range=[style.BLUE, style.YELLOW]),
                             legend=None),
             tooltip=["Zone", "test", alt.Tooltip("err:Q", title="Median error %")])
         ui.chart(c, 330)

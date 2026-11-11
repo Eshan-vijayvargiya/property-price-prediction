@@ -9,19 +9,20 @@ ZONE_COLORS = [style.BLUE, style.ORANGE, style.AQUA, style.YELLOW, style.MAGENTA
 ZONE_SCALE = alt.Scale(domain=ZONES, range=ZONE_COLORS)
 SEGMENTS = ["Budget starter homes", "Spacious value homes", "Compact city homes", "Premium family homes",
             "Large luxury homes"]
-SEG_COLORS = [style.AQUA, style.YELLOW, style.BLUE, style.VIOLET, style.MAGENTA]
+SEG_COLORS = [style.AQUA, style.YELLOW, style.BLUE, style.MAGENTA, style.VIOLET]  # passes the adjacent-pair check
 SEG_SCALE = alt.Scale(domain=SEGMENTS, range=SEG_COLORS)
 
 
 def chart(c, height=320):
     st.altair_chart(
         c.properties(height=height).configure_view(strokeWidth=0)
-        .configure_axis(gridColor=style.GRID, domainColor="rgba(160,170,230,0.25)", tickColor="rgba(160,170,230,0.25)",
-                        labelColor=style.SOFT, titleColor=style.MUTED, labelFontSize=11, titleFontSize=11.5,
-                        labelFont="Inter", titleFont="Inter", titleFontWeight=500)
-        .configure_legend(labelColor=style.SOFT, titleColor=style.MUTED, orient="top", labelFont="Inter",
-                          titleFont="Inter", labelFontSize=11.5, symbolType="circle")
-        .configure_title(color=style.INK, font="Inter")
+        .configure_axis(gridColor=style.GRID, domainColor="#2d3640", tickColor="#2d3640",
+                        labelColor=style.SOFT, titleColor=style.MUTED, labelFontSize=11, titleFontSize=11,
+                        labelFont="IBM Plex Mono", titleFont="IBM Plex Mono", titleFontWeight=500)
+        .configure_legend(labelColor=style.SOFT, titleColor=style.MUTED, orient="top", labelFont="IBM Plex Mono",
+                          titleFont="IBM Plex Mono", labelFontSize=11, symbolType="square")
+        .configure_text(font="IBM Plex Mono")
+        .configure_title(color=style.INK, font="IBM Plex Sans")
         .configure(background="transparent"), width="stretch")
 
 

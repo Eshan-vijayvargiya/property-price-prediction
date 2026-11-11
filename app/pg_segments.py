@@ -92,11 +92,11 @@ def render():
         a, b = st.columns([1, 1.2], gap="medium")
         with a:
             curve = pd.DataFrame(s["curve"])
-            line = alt.Chart(curve).mark_line(color=style.BLUE, strokeWidth=2, point=alt.OverlayMarkDef(size=60, filled=True)).encode(
+            line = alt.Chart(curve).mark_line(color=style.YELLOW, strokeWidth=2, point=alt.OverlayMarkDef(size=60, filled=True)).encode(
                 x=alt.X("k:O", title="Number of segments (k)", axis=alt.Axis(labelAngle=0)),
                 y=alt.Y("silhouette:Q", title="Silhouette score", scale=alt.Scale(domain=[0, 0.6])),
                 tooltip=["k", "silhouette", "inertia_per_row"])
-            rule = alt.Chart(pd.DataFrame({"k": [5]})).mark_rule(color="#9b7dff", strokeDash=[4, 4]).encode(x="k:O")
+            rule = alt.Chart(pd.DataFrame({"k": [5]})).mark_rule(color=style.ACCENT, strokeDash=[4, 4]).encode(x="k:O")
             ui.chart(line + rule, 230)
         with b:
             ari = s["stability_ari"]

@@ -6,13 +6,14 @@ property listings and tested the way a developer would actually use it.
 
 **Live app:** https://eshan-property-price.streamlit.app/
 
-![Home page](docs/home.png)
+![Price estimator](docs/estimator.png)
 
 ## What's inside
 
 | Page | What it does |
 |---|---|
-| **Price estimator** | Describe a flat (locality, project, BHK, area, status, new/resale): get an asking price, an 80% range, the same flat across Mumbai, what-ifs and similar listings |
+| **Sign-in page** | Name plus mobile number or email (validated), or *Skip for now*. Sign-ins can go to a private Google Sheet: [docs/SIGNIN_SETUP.md](docs/SIGNIN_SETUP.md) |
+| **Price estimator** | Describe a flat (locality, project, BHK, area, status, new/resale): get an asking price, an 80% range (with the model's real past errors behind it), a floor plan that redraws with the flat type, the locality's own skyline and numbers, the same flat across Mumbai, what-ifs and similar listings |
 | **Launch planner** | For a developer: price a new project's unit mix and see where it sits against the projects already selling in that locality |
 | **Market explorer** | A locality price index (the same standard flat everywhere), zone profiles, a deep-dive on any locality |
 | **Buyer segments** | K-Means on size and price per sq ft: five kinds of home and who each one suits |
@@ -120,6 +121,15 @@ k = 3-7, so k was chosen for usefulness); five other random starts give the same
 Asking prices, not sales; one snapshot, so no trends; carpet and built-up area mixed; no floor, view, amenities,
 parking or builder; big projects post many listings. The segments describe homes; the buyer labels are my reading.
 
+## Design
+
+A dark "terminal" look (IBM Plex Sans and Mono, one amber accent) chosen from four mock-ups. Every image is a line
+drawing made in code (`app/art.py`): the city skyline, a skyline for each locality (taller towers where prices are
+higher) and an illustrative floor plan. No photos, so nothing to license. Chart colours were checked for
+colour-blind separation on the dark background.
+
+![Sign-in page](docs/signin.png)
+
 ## Run it
 
 ```bash
@@ -140,7 +150,8 @@ python scripts/make_notebook.py   # notebooks/property_price_analysis.ipynb (nee
 ## Project layout
 
 ```
-app/        Streamlit app: app.py (router), pg_*.py (pages), core.py (data, models, prices in ₹),
+app/        Streamlit app: app.py (router + sign-in gate), pg_*.py (pages), core.py (data, models, prices in ₹),
+            art.py (skylines, floor plans), pg_login.py (sign-in),
             features.py (feature engineering, shared with training), places.py (localities -> zones), style.py, ui.py
 scripts/    build_data, evaluate, train, check_six_city, make_notebook
 data/       raw CSV, clean listings, locality index, cleaning report, cross-validated prediction sample

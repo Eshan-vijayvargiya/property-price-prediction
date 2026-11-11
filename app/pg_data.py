@@ -42,7 +42,7 @@ def render():
         style.sec("The dataset I didn't use, and why", "🕵️", "Kaggle: Housing Prices in Metropolitan Areas of India")
         s = pd.DataFrame(six["mumbai_sample"])
         cols = st.columns(2, gap="medium")
-        for col, batch, color in zip(cols, ["Amenities listed", "Amenities missing"], [style.BLUE, style.ORANGE]):
+        for col, batch, color in zip(cols, ["Amenities listed", "Amenities missing"], [style.BLUE, style.YELLOW]):
             r = six["cities"]["Mumbai"][batch]
             with col:
                 style.html(f'<div class="card-p"><b>Mumbai, {batch.lower()}</b> · {r["rows"]:,} rows · '

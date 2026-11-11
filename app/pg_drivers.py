@@ -13,8 +13,8 @@ def forest(df, height):
     df = df.copy()
     df["label"] = df.effect_pct.map(lambda v: f"{v:+.1f}%")
     y = alt.Y("name:N", sort=None, title=None, axis=alt.Axis(labelLimit=260))
-    rule = alt.Chart(df).mark_rule(color=style.BLUE, strokeWidth=2.5).encode(y=y, x=alt.X("low_pct:Q", title="Effect on price (%)"), x2="high_pct:Q")
-    dot = alt.Chart(df).mark_circle(color=style.BLUE, size=110, stroke="#060a1c", strokeWidth=2, opacity=1).encode(
+    rule = alt.Chart(df).mark_rule(color=style.YELLOW, strokeWidth=2.5).encode(y=y, x=alt.X("low_pct:Q", title="Effect on price (%)"), x2="high_pct:Q")
+    dot = alt.Chart(df).mark_circle(color=style.YELLOW, size=110, stroke="#060a1c", strokeWidth=2, opacity=1).encode(
         y=y, x="effect_pct:Q", tooltip=[alt.Tooltip("name:N", title=" "), alt.Tooltip("effect_pct:Q", title="Effect %", format="+.1f"),
                                         alt.Tooltip("low_pct:Q", title="95% low", format="+.1f"),
                                         alt.Tooltip("high_pct:Q", title="95% high", format="+.1f")])
@@ -65,12 +65,12 @@ def render():
         rows = [{"test": t, "group": g, "pts": v} for t, r in imp.items() for g, v in r["increase_pct_points"].items()]
         df = pd.DataFrame(rows)
         order = list(imp["New project"]["increase_pct_points"].keys())
-        style.legend([("Known project", style.BLUE), ("New project", style.ORANGE)])
+        style.legend([("Known project", style.BLUE), ("New project", style.YELLOW)])
         c = alt.Chart(df).mark_bar(cornerRadiusEnd=3, height=alt.RelativeBandSize(0.8)).encode(
             y=alt.Y("group:N", sort=order, title=None, axis=alt.Axis(labelLimit=200)),
             yOffset=alt.YOffset("test:N", sort=["Known project", "New project"]),
             x=alt.X("pts:Q", title="Error increase when shuffled (% points)"),
-            color=alt.Color("test:N", scale=alt.Scale(domain=["Known project", "New project"], range=[style.BLUE, style.ORANGE]),
+            color=alt.Color("test:N", scale=alt.Scale(domain=["Known project", "New project"], range=[style.BLUE, style.YELLOW]),
                             legend=None),
             tooltip=[alt.Tooltip("test:N", title="Test"), alt.Tooltip("group:N", title="Feature group"),
                      alt.Tooltip("pts:Q", title="+ % points", format=".1f")])

@@ -176,6 +176,15 @@ projects already selling there. Then decide: price at the market, or justify a p
 builder brand, and enquiry data, so the segments become real buyer segments and a classification model can predict which
 leads will book.
 
+**Why a sign-in page?** Property sites capture leads before showing prices, so I built the same flow: name
+plus mobile or email, checked (a 10-digit Indian mobile starting 6-9, or a valid email), with *Skip for now* so
+nobody is forced. Sign-ins go to a private Google Sheet through a secret web-hook URL kept in Streamlit's
+Secrets, never in the code. If saving fails, the visitor still gets in.
+
+**Why line drawings, not photos?** Everything is drawn in code, so there's nothing to license, and the drawings
+carry data: each locality's skyline is taller where prices are higher, and the floor plan redraws with the flat
+type. The bars under the price are the model's real past errors in that zone, not decoration.
+
 ## Numbers to remember
 
 | | |

@@ -9,7 +9,7 @@ import ui
 from features import ZONES
 
 BHK_ORDER = ["1 BHK", "2 BHK", "3 BHK", "4+ BHK"]
-BHK_COLORS = [style.AQUA, style.BLUE, style.VIOLET, style.MAGENTA]
+BHK_COLORS = [style.AQUA, style.BLUE, style.MAGENTA, style.YELLOW]
 
 
 def index_tab():
